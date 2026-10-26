@@ -1,24 +1,39 @@
-@import url(variable.css);
-
-* {
+@import url(variables.css);
+ *{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-}
-
-.header {
+ }
+ 
+ .header{
     background-color: var(--cor-principal);
     color: var(--texto-principal);
-    
-    height: var(--altura-do-header);
-
+ 
+    height: var(--altura-header);
+ 
     display: flex;
     align-items: center;
     justify-content: space-between;
-}
-
-.navegar {
-    text-decoration: none;
-    color : var(--texto-principal)
-}
-
+ }
+ 
+ .logoContainer {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   gap: 10px;
+ }
+ 
+ .logoContainer h1 {
+   font-family: 'Fonte titulo';
+ }
+ 
+ .logoContainer img {
+   width: auto;
+   height: calc(var(--altura-header) - 1vh);
+ }
+ 
+ 
+ .navigation a {
+   text-decoration: none;
+   color: var(--texto-principal);
+ }
