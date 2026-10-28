@@ -1,44 +1,56 @@
 :root {
-    --cor-principal: #1e1eb6;
-    --cor-alternativa: #FFE691;
- 
-    --texto-principal: #262626;
-    --texto-alternativo: #FAFAFA;
- 
-    --altura-header: 7.5vh;
+    /* PALETA MADOKA MÁGICA */
+    --cor-principal: #585872;
+    --cor-rosa: #ffb6bb;
+    --cor-amarela: #ffe691;
+    --cor-azul: #585872;
+    --cor-vermelho: #9e4446;
+    --cor-branca: #ffe691;
+
+    /* TEXTOS */
+    --texto-principal: #585872;
+    --texto-alternativo: #fafafa;
+
+    /* DIMENSÕES */
+    --altura-header: 80px;
     --altura-footer: 15vh;
+
+    /* DETALHES */
+    --borda: #e7e2e8;
+    --sombra: 0 8px 24px rgba(88, 88, 114, 0.12);
 }
- 
+
+/* FONTE DOS TÍTULOS */
 @font-face {
-    font-family: 'Fonte corpo';
-    src: url(../assets/fonts/Pacifico.ttf);
+    font-family: "Fonte Titulo";
+    src: url("../assets/fonts/Pacifico.ttf");
 }
- 
-@font-face{
-    font-family: 'Fonte Corpo';
-    src: url(../assets/fonts/Poppins-Regular.ttf);
-    font-weight: normal;
+
+/* FONTE DO CORPO */
+@font-face {
+    font-family: "Fonte Corpo";
+    src: url("../assets/fonts/Poppins-Regular.ttf");
+    font-weight: 400;
     font-style: normal;
 }
- 
-@font-face{
-    font-family: 'Fonte Corpo';
-    src: url(../assets/fonts/Poppins-Bold.ttf);
-    font-weight: bold;
+
+@font-face {
+    font-family: "Fonte Corpo";
+    src: url("../assets/fonts/Poppins-Bold.ttf");
+    font-weight: 700;
     font-style: normal;
 }
- 
-@font-face{
-    font-family: 'Fonte Corpo';
-    src: url(../assets/fonts/Poppins-Italic.ttf);
-    font-weight: normal;
+
+@font-face {
+    font-family: "Fonte Corpo";
+    src: url("../assets/fonts/Poppins-Italic.ttf");
+    font-weight: 400;
     font-style: italic;
 }
- 
-@font-face{
-    font-family: 'Fonte Corpo';
-    src: url(../assets/fonts/Poppins-BoldItalic.ttf);
-    font-weight: bold;
+
+@font-face {
+    font-family: "Fonte Corpo";
+    src: url("../assets/fonts/Poppins-BoldItalic.ttf");
+    font-weight: 700;
     font-style: italic;
 }
- 
