@@ -1,32 +1,26 @@
 :root {
-    /* PALETA MADOKA MÁGICA */
     --cor-principal: #585872;
     --cor-rosa: #ffb6bb;
     --cor-amarela: #ffe691;
-    --cor-azul: #585872;
+    --cor-azul: #15155c;
     --cor-vermelho: #9e4446;
-    --cor-branca: #ffe691;
+    --cor-branca: #f8f8f8;
 
-    /* TEXTOS */
     --texto-principal: #585872;
     --texto-alternativo: #fafafa;
 
-    /* DIMENSÕES */
     --altura-header: 80px;
     --altura-footer: 15vh;
 
-    /* DETALHES */
-    --borda: #e7e2e8;
+    --borda: #ffffff;
     --sombra: 0 8px 24px rgba(88, 88, 114, 0.12);
 }
 
-/* FONTE DOS TÍTULOS */
 @font-face {
     font-family: "Fonte Titulo";
     src: url("../assets/fonts/Pacifico.ttf");
 }
 
-/* FONTE DO CORPO */
 @font-face {
     font-family: "Fonte Corpo";
     src: url("../assets/fonts/Poppins-Regular.ttf");
