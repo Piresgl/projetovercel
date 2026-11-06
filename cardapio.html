@@ -10,22 +10,56 @@
 </head>
 
 <body>
-<header id="header" class="header">
+    <header id="header" class="header">
         <div class="logoContainer">
             <img src="./assets/img/LogoImage.png" alt="Logo da Padoka Mágica">
             <h1>Padoka Mágica</h1>
         </div>
- 
+
         <nav class="navigation">
-            <a href="#hero">Início</a>
-            <a href="#historia">Sobre</a>
-            <a href="#comoChegar">Como Chegar</a>
-            <a href="#cardapio">Cardápio</a>
+            <a href="index.html#hero">Inicio</a>
+            <a href="index.html#historia">Sobre</a>
+            <a href="index.html#comoChegar">Como Chegar</a>
+            <a href="cardapio.html#cardapio">Cardápio</a>
         </nav>
     </header>
 
-    <main>
+    <main id="content" class="content">
+        <section id="cardapioTopo" class="cardapioTopo">
+            <p class="cardapioTag">Feito hoje, sem contrato escondido</p>
+            <h1 class="cardapiotitulo">Cardapio</h1>
+            <p class="cardapioSubtitulo">Escolha a quantidade de cada item e veja quanto vai custar a sua vista a Padoka
+                Magica</p>
 
+            <form id="formCardapio" class="cardapioConteudo" action="#">
+                <div class="listaCategorias">
+
+                    <section id="cafeDaManha" class="categoria">
+                        <div class="categoriaCabecalho">
+                            <h2>Café da Manhã</h2>
+                            <p>Servindo todos os dias, das 8h às 11h</p>
+                        </div>
+
+                        <div class="ListaItens">
+                            <div class="item">
+                                <h3 class="ItemNome">Cafe da Manhã da Familia Kaname</h3>
+                                <p class="ItemDescricao">Pao na chapa, ovos mexidos, frutas da horta do seu Tomoshisa,
+                                    suco de laranja e café
+                                    com leite</p>
+                                <p>R$ 32,90</p>
+                            </div>
+
+                            <div class="item">
+                                <h3 class="ItemNome">Pão na chapa de mitakihara</h3>
+                                <p class="ItemDescricao">pao frances tostado na chapa com bastante manteiga
+                                </p>
+                                <p>R$ 07,50</p>
+                            </div>
+
+                        </div>
+                    </section>
+        </section>
+        </form>
     </main>
 
     <footer id="footer" class="footer">
@@ -54,7 +88,7 @@
         </div>
         <div class="copyright">
             <p>
-              2026 Padoka Mágica. Todos os direitos reservados. Nenhuma Soul Gem foi escurecida no preparo dos
+                2026 Padoka Mágica. Todos os direitos reservados. Nenhuma Soul Gem foi escurecida no preparo dos
                 nossos produtos.
             </p>
         </div>
