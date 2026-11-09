@@ -1,19 +1,19 @@
 @import url(./layout.css);
 
 .cardapioTopo {
-background-color: var(--cor-amarela);
-text-align: center;
-padding: calc(var(--altura-do-header) - 60px);
+    background-color: var(--cor-amarela);
+    text-align: left;
+    padding: calc(var(--altura-do-header) - 60px);
 }
 
 .cardapioTag {
     background-color: var(--cor-branca);
-color: var(--cor-vermelho);
-font-weight: bold;
+    color: var(--cor-vermelho);
+    font-weight: bold;
 
-width: fit-content;
-padding: 6px 16px;
-border-radius: 20px;
+    width: fit-content;
+    padding: 6px 16px;
+    border-radius: 20px;
 }
 
 .cardapioTitulo {
@@ -29,24 +29,42 @@ border-radius: 20px;
 }
 
 .cardapioConteudo {
-display: flex;
-align-items: flex-start;
+    display: flex;
+    align-items: flex-start;
+    padding: 25px;
 }
 
-.listacategorias{
+.listacategorias {
+    width: 70%;
     display: flex;
     flex-direction: column;
 }
 
 .categoriaCabecalho {
     border-bottom: 3px solid var(--cor-azul);
+    margin-bottom: 25px;
+    padding-bottom: 10px;
+}
+
+.categoria {
+margin-top: 20px;
 }
 
 .ListaItens {
     display: flex;
-    gap: 16px;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
 .item {
-    width: 45%;
+    width: calc(50% - 10px);
+    padding: 20px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 15px;
+
+    border-left: 6px solid var(--cor-vermelho);
+    border-radius: 12px;
 }
