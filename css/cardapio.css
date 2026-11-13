@@ -3,7 +3,7 @@
 .cardapioTopo {
     background-color: var(--cor-amarela);
     text-align: left;
-    padding: calc(var(--altura-do-header) - 60px);
+    padding: 40px 6%;
 }
 
 .cardapioTag {
@@ -19,7 +19,7 @@
 .cardapioTitulo {
     color: var(--cor-vermelho);
 
-    font-family: "Fonte Titulos";
+    font-family: "Fonte Titulo";
     font-size: 56px;
 }
 
@@ -31,10 +31,10 @@
 .cardapioConteudo {
     display: flex;
     align-items: flex-start;
-    padding: 25px;
+    padding: 25px 0;
 }
 
-.listacategorias {
+.listaCategorias {
     width: 70%;
     display: flex;
     flex-direction: column;
@@ -47,7 +47,7 @@
 }
 
 .categoria {
-margin-top: 20px;
+    margin-top: 20px;
 }
 
 .ListaItens {
@@ -67,4 +67,72 @@ margin-top: 20px;
 
     border-left: 6px solid var(--cor-vermelho);
     border-radius: 12px;
+}
+
+.ItemNome {
+    flex: 1 1 30%;
+    min-width: 0;
+}
+
+.ItemDescricao {
+    flex: 2 1 40%;
+    min-width: 0;
+}
+
+.item>p:last-child {
+    white-space: nowrap;
+    font-weight: bold;
+}
+
+/* ===== RESPONSIVO ===== */
+
+/* Tablet */
+@media (max-width: 1024px) {
+    .listaCategorias {
+        width: 100%;
+    }
+
+    .cardapioTitulo {
+        font-size: 46px;
+    }
+}
+
+/* Celular */
+@media (max-width: 768px) {
+    .cardapioTopo {
+        padding: 30px 20px;
+    }
+
+    .cardapioTitulo {
+        font-size: 38px;
+    }
+
+    .cardapioSubtitulo {
+        font-size: medium;
+    }
+
+    .item {
+        width: 100%;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .item>p:last-child {
+        color: var(--cor-vermelho);
+    }
+}
+
+/* Celular pequeno */
+@media (max-width: 480px) {
+    .cardapioTitulo {
+        font-size: 32px;
+    }
+
+    .item {
+        padding: 15px;
+    }
+
+    .categoria h2 {
+        font-size: 22px;
+    }
 }

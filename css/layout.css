@@ -10,6 +10,11 @@ html {
     scroll-behavior: smooth;
 }
 
+img,
+iframe {
+    max-width: 100%;
+}
+
 body {
     font-family: "Fonte Corpo", sans-serif;
     background-color: var(--cor-branca);
@@ -148,5 +153,23 @@ body {
 
     .footerColuna {
         width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .logoContainer h1 {
+        font-size: 22px;
+    }
+
+    .logoContainer img {
+        height: 44px;
+    }
+
+    .navigation {
+        gap: 8px 14px;
+    }
+
+    .navigation a {
+        font-size: 13px;
     }
 }
